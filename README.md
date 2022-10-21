@@ -20,7 +20,7 @@ Recommended Version: r2022a
 ```
 @input: path - the file path in which all of the data resides
 @output net_props - a structure containing all of the data extracted
-		            from the image stack
+		    from the image stack
 
 Note that the input filenames are stored as variables to make things simple to change. 
 
