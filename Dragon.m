@@ -11,9 +11,9 @@ function net_props = Dragon(path)
 %   simple to change
 %
 %   Default Filenames:
-%       raw_stack_filename  = "actin_stack.tif";
+%       raw_stack_filename  = "actin_stack.tif";         - REQUIRED INPUT
 %       projection_filename = "actin_original.tif";
-%       mask_filename       = "mask.tif";
+%       mask_filename       = "mask.tif";                - REQUIRED INPUT
 %       variables_filename  = "netProps.mat";
 %
 %   The ratio between pixel width and voxel depth is specified by z_scale
