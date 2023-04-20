@@ -3,7 +3,7 @@ function p = getParams()
 %
 %   @output: p - structure containing all used parameters
 %
-%   Each parameter has a little descritpion explaining their meaning and
+%   Each parameter has a little description explaining their meaning and
 %   usage.
 
     p.z_scale = 5.5; %ratio of pixel size to voxel depth
