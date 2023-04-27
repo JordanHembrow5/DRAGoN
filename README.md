@@ -102,7 +102,8 @@ Inside `Dragon.m`, there is a function which outputs some of our key measures, a
 ```
 netProps = [];
 for idx = 1:length(lst)
-	netProps = [NetProps; Dragon(lst(idx))];
+	ans = Dragon(lst(idx));
+	netProps = [NetProps; ans];
 	figure(idx);
 	imshow(labeloverlay(imadjust(ans.imRaw, stretchlim(ans.imRaw, 0)), ans.skelLabel));
 end
