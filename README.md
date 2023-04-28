@@ -7,13 +7,17 @@ To learn about the development, testing, and outcomes, please read our paper her
 
 
 
-**Table of Contents**
+# Table of Contents
 
-[TOCM]
-
-[TOC]
-
-TODO: Update to work around GitHub TOC limitations
+- [Requirements](#requirements)
+  - [File Requirements](#file-requirements)
+  - [MATLAB Requirements](#matlab-requirements)
+    - [Compatibility Details](#compatibility-details)
+- [DRAGoN Function Information](#dragon-function-information)
+  - [Algorithm Parameters and Behaviour](#algorithm-parameters-and-behaviour)
+- [DRAGoN Tutorial](#dragon-tutorial)
+  - [First Steps](#first-steps)
+  - [Further Testing](#further-testing)
 
 # Requirements
 ### File Requirements
