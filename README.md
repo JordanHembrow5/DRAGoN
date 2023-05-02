@@ -1,7 +1,7 @@
 # DRAGoN Summary
 The DRAGoN algorithm is a series of Matlab scripts which segments a filamentous network from a fluorescence microscopy image (or stack of images). The centreline of the network is estimated and replaced with labelled pixel-thick lines, which are then analysed to provide several mathematical, physical and biological properties.
 
-The scripts are split up in such a way that they may be useful by themselves, or perhaps as a subset. This also enables the Matlab help function to quickly provide a summary of how each script works.
+The scripts are split up in such a way that they may be useful by themselves, or perhaps as a subset. This also enables the Matlab help function to quickly provide a summary of how each script works. If you don't care about that; however, you can just call the function in `Dragon.m` and everything will be called for you.
 
 To learn about the development, testing, and outcomes, please read our paper here: [AUTOMATIC EXTRACTION OF ACTIN NETWORKS IN PLANTS](https://doi.org/10.1101/2023.01.18.524528 "preprint link")
 
@@ -65,8 +65,10 @@ The ratio between pixel width and voxel depth is specified by z_scale so will de
 This parameter, along with the rest, is found in getParams.m
 ```
 
+***Please note that the path being passed to `Dragon.m` should include the trailing slash(s) (type dependant on your OS), or the string concatenation process may not work.***
+
 ### Algorithm Parameters and Behaviour
-All of the parameters are stored in *getParams.m* with a description of the effect of each one. prctile_thresh is the most sensitive and will likely need tweaking for your setup. z_scale is the ratio between the size of your pixel in 2D and the distance between your stacked images, make sure to adjust this where needed.
+All of the parameters are stored in `getParams.m` with a description of the effect of each one. `prctile_thresh` is the most sensitive and will likely need tweaking for your setup. `z_scale` is the ratio between the size of your pixel in 2D and the distance between your stacked images, make sure to adjust this where needed.
 
 
 # DRAGoN Tutorial
@@ -84,7 +86,7 @@ All of the parameters are stored in *getParams.m* with a description of the effe
 	
 	b. Double click the .mat file to import the path lists into MATLAB (variable called `lst`)
 
-4. Test that everything is working and in the corret locations with the following command: `Dragon(lst(1));`
+4. Test that everything is working and in the correct locations with the following command: `Dragon(lst(1));`
 
 	a. If everything is working, it should take a little under a minute to finish, and `ans` should contain the output.
 	
@@ -93,7 +95,7 @@ All of the parameters are stored in *getParams.m* with a description of the effe
 
 
 ### Further Testing
-If everything in <First Steps> worked, we can begin to run more tests. To run everything in one go and see those overlays, you can use:
+If everything in [First Steps](#first-steps) worked, we can begin to run more tests. To run everything in one go and see those overlays, you can use:
 ```
 for idx = 1:length(lst)
 	Dragon(lst(idx));
