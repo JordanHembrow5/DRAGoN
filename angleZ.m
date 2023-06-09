@@ -20,7 +20,7 @@ function net_props = angleZ(net_props, im_stack, z_scale)
     net_props.avgLenMap = avgFilamentLengthMap(net_props.skelLabel, net_props.filLenXYZ);
 
     net_props.z_scale = z_scale;
-    net_props = volumeDensities(net_props, z_scale);
+    net_props = volumeDensities(net_props, im_stack);
 end
 
 function fil_ang_z = filamentAngZ(filament_ang, im_stack, z_scale)
